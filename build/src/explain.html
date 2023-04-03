@@ -1,153 +1,333 @@
 
 
+<!DOCTYPE html>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+
+<html lang="zh-CN" >
+
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>软件操作说明 &#8212; 16 路车载摄像头 GMSL 采集卡操作手册 1.0 文档</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <title>软件操作说明 &mdash; 16 路车载摄像头 GMSL 采集卡操作手册 1.0 文档</title>
-  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
   
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-  
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" href="../_static/css/pdj.css" type="text/css" />
-
-  
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  
-    <link rel="stylesheet" href="../_static/css/pdj.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="索引"
-              href="../genindex.html"/>
-        <link rel="search" title="搜索" href="../search.html"/>
-    <link rel="top" title="16 路车载摄像头 GMSL 采集卡操作手册 1.0 文档" href="../index.html"/>
-        <link rel="next" title="板卡功能验证" href="verify.html"/>
-        <link rel="prev" title="板卡安装与环境配置" href="environment.html"/>
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="cache-control" content="public" />
-    <meta name="robots" content="follow, all" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Add jQuery library -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/translations.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'src/explain';</script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="板卡功能验证" href="verify.html" />
+    <link rel="prev" title="板卡安装与环境配置" href="environment.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="zh-CN"/>
   </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-  <body class="wy-body-for-nav" role="document">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-nav-search">
-        <a href="../index.html" class="fa fa-home"> 16 路车载摄像头 GMSL 采集卡操作手册 </a>
-        <div role="search">
-	  <form id ="rtd-search-form" class="wy-form"
-		action="../search.html" method="get">
-	    <input type="text" name="q" placeholder="Search docs" />
-	    <input type="hidden" name="check_keywords" value="yes" />
-	    <input type="hidden" name="area" value="default" />
-	  </form>
-	</div>
-      </div>
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	
-          
-          
-              <p class="caption" role="heading"><span class="caption-text">公司简介</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="about_aumo.html">关于AUMO</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="about_aumo.html#id1">联系方式</a></li>
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">16 路车载摄像头 GMSL 采集卡操作手册 1.0 文档</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">公司简介</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="about_aumo.html">关于AUMO</a></li>
 </ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">A16 手册</span></p>
-<ul class="current">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">A16 手册</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">引言</a></li>
-<li class="toctree-l1"><a class="reference internal" href="environment.html">板卡安装与环境配置</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="environment.html#id2">板卡安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="environment.html#id3">系统环境配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment.html">板卡安装与环境配置</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">软件操作说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="verify.html">板卡功能验证</a></li>
 </ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">软件操作说明</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">运行板卡配置软件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">生成板卡配置文件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">打开板卡配置文件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">配置板卡</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id11">板卡自启动配置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id12">通道时间戳同步设置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id13">自定义摄像头</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id17">板卡升级</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="verify.html">板卡功能验证</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="verify.html#id2">配置验证</a></li>
-<li class="toctree-l2"><a class="reference internal" href="verify.html#id3">时间同步验证</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">常见问题</span></p>
-<ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">常见问题</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="problem.html">PROBLEM</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">AUMO版权</span></p>
-<ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">AUMO版权</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="IP.html">版权说明</a></li>
 </ul>
 
-          
-        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
 
       </div>
-      &nbsp;
-    </nav>
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      
+      <main id="main-content" class="bd-main">
+        
+        
 
-      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="#">Porão do Juca</a>
-      </nav>
+<div class="sbt-scroll-pixel-helper"></div>
 
-      <div class="wy-nav-content">
-	<div class="fundo-claro">
-	</div>
-	<div class="fundo-escuro">
-	</div>
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
 
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-	    
-	    <!-- <ul class="wy-breadcrumbs"> -->
-	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+<div class="article-header-buttons">
 
-	    <!--   <li>Features</li> -->
-	    <!--   <li class="wy-breadcrumbs-aside"> -->
 
-	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
 
-	    <!--   </li> -->
-	    <!-- </ul> -->
-	    <!-- <hr/> -->
-	  </div>
 
-          <div role="main" class="">
 
-	    <div id="content" class="hfeed entry-container hentry">
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="下载此页面">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/src/explain.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="下载源文件"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="列印成 PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全屏模式"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>软件操作说明</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目录 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">运行板卡配置软件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">生成板卡配置文件</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">新建配置文件</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">配置通道</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">生成配置文件</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">打开板卡配置文件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">配置板卡</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">切换功能界面</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">板卡添加配置文件</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">板卡自启动配置</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">通道时间戳同步设置</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">自定义摄像头</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">切换功能界面</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">输入配置信息</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">摄像头配置文件的使用</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">板卡升级</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">切换功能界面</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">升级</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <img alt="../_images/88.png" class="align-center" src="../_images/88.png" />
 <section id="id1">
-<h1>软件操作说明<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h1>
+<h1>软件操作说明<a class="headerlink" href="#id1" title="此标题的永久链接">#</a></h1>
 <section id="id2">
-<h2>运行板卡配置软件<a class="headerlink" href="#id2" title="此标题的永久链接">¶</a></h2>
+<h2>运行板卡配置软件<a class="headerlink" href="#id2" title="此标题的永久链接">#</a></h2>
 <p>进入 UI 目录以 root 权限运行 pcieBoard_manage 软件，即可进入软件主界面执行相关操作。</p>
 <img alt="../_images/image11.png" src="../_images/image11.png" />
 <p>图 3-1 运行软件</p>
@@ -163,15 +343,15 @@
 </ul>
 </section>
 <section id="id3">
-<h2>生成板卡配置文件<a class="headerlink" href="#id3" title="此标题的永久链接">¶</a></h2>
+<h2>生成板卡配置文件<a class="headerlink" href="#id3" title="此标题的永久链接">#</a></h2>
 <section id="id4">
-<h3>新建配置文件<a class="headerlink" href="#id4" title="此标题的永久链接">¶</a></h3>
+<h3>新建配置文件<a class="headerlink" href="#id4" title="此标题的永久链接">#</a></h3>
 <p>点击菜单栏的文件项，在弹出的文件菜单下，点击新建项生成空白配置文件。</p>
 <img alt="../_images/image31.png" src="../_images/image31.png" />
 <p>图 3-3 新建配置文件</p>
 </section>
 <section id="id5">
-<h3>配置通道<a class="headerlink" href="#id5" title="此标题的永久链接">¶</a></h3>
+<h3>配置通道<a class="headerlink" href="#id5" title="此标题的永久链接">#</a></h3>
 <p>根据板卡通道连接的摄像头型号，在摄像头列表中找到对应的摄像头，拖动该摄像头
 至相应的通道。如果不小心拖动配置了错误的摄像头，可点击通道组右上方的小标清除配
 置信息，如果图 3-4 中的 G1，或者也可以拖动其他摄像头覆盖原来的配置。</p>
@@ -179,7 +359,7 @@
 <p>图 3-4 拖动配置</p>
 </section>
 <section id="id6">
-<h3>生成配置文件<a class="headerlink" href="#id6" title="此标题的永久链接">¶</a></h3>
+<h3>生成配置文件<a class="headerlink" href="#id6" title="此标题的永久链接">#</a></h3>
 <p>点击菜单栏的文件项，在弹出的文件菜单下，点击保存项，输入文件名，生成配置文件</p>
 <img alt="../_images/image51.png" src="../_images/image51.png" />
 <p>图 3-5 保存文件</p>
@@ -190,7 +370,7 @@
 </section>
 </section>
 <section id="id7">
-<h2>打开板卡配置文件<a class="headerlink" href="#id7" title="此标题的永久链接">¶</a></h2>
+<h2>打开板卡配置文件<a class="headerlink" href="#id7" title="此标题的永久链接">#</a></h2>
 <p>点击菜单栏的文件项，在弹出的文件菜单下，点击打开项，选择想要打开的配置文件，确定，主界面标题栏将显示对应的文件名，通道将显示对应的配置信息。</p>
 <img alt="../_images/image61.png" src="../_images/image61.png" />
 <p>图 3-6 打开文件</p>
@@ -198,16 +378,16 @@
 <p>图 3-7 选择文件</p>
 </section>
 <section id="id8">
-<h2>配置板卡<a class="headerlink" href="#id8" title="此标题的永久链接">¶</a></h2>
+<h2>配置板卡<a class="headerlink" href="#id8" title="此标题的永久链接">#</a></h2>
 <p>此操作要求通道已经接入摄像头，配置才能生效</p>
 <section id="id9">
-<h3>切换功能界面<a class="headerlink" href="#id9" title="此标题的永久链接">¶</a></h3>
+<h3>切换功能界面<a class="headerlink" href="#id9" title="此标题的永久链接">#</a></h3>
 <p>板卡的配置界面不在主界面，需要点击板卡配置，将界面切换至板卡配置功能界面。</p>
 <img alt="../_images/image81.png" src="../_images/image81.png" />
 <p>图 3-8 切换功能界面</p>
 </section>
 <section id="id10">
-<h3>板卡添加配置文件<a class="headerlink" href="#id10" title="此标题的永久链接">¶</a></h3>
+<h3>板卡添加配置文件<a class="headerlink" href="#id10" title="此标题的永久链接">#</a></h3>
 <p>板卡配置界面展示的是 Ubuntu 系统接入并识别到的板卡，上面展示了板卡设备的部分
 信息。针对操作者想要配置的板卡，在该板卡展示框内点击添加配置文件，然后点击配置按
 钮，等待配置完成。如果想要对多块板卡同时配置，就在对应的板卡展示框内点击添加配置
@@ -225,14 +405,14 @@
 </section>
 </section>
 <section id="id11">
-<h2>板卡自启动配置<a class="headerlink" href="#id11" title="此标题的永久链接">¶</a></h2>
+<h2>板卡自启动配置<a class="headerlink" href="#id11" title="此标题的永久链接">#</a></h2>
 <p>如果需要在 Ubuntu 系统启动时自动加载配置文件，对板卡进行配置，请在需要自动配
 置的板卡框内添加配置文件，点击装载按钮，完成设置。</p>
 <img alt="../_images/image10.png" src="../_images/image10.png" />
 <p>图 3-12 添加配置文件</p>
 </section>
 <section id="id12">
-<h2>通道时间戳同步设置<a class="headerlink" href="#id12" title="此标题的永久链接">¶</a></h2>
+<h2>通道时间戳同步设置<a class="headerlink" href="#id12" title="此标题的永久链接">#</a></h2>
 <p>板卡默认支持 PTP 网络同步，在上电后同步功能将自动开启，只需要将板卡通过网线连
 接到 PTP 服务器，就能实现板卡对 PTP 服务器的同步。
 板卡启动后通道默认采用的是 Ubuntu 系统的时间戳，如果要给通道打上板卡的时间戳，
@@ -242,19 +422,19 @@
 <p>图 3-13 通道打上板卡时间戳</p>
 </section>
 <section id="id13">
-<h2>自定义摄像头<a class="headerlink" href="#id13" title="此标题的永久链接">¶</a></h2>
+<h2>自定义摄像头<a class="headerlink" href="#id13" title="此标题的永久链接">#</a></h2>
 <p>软件的配置信息是针对摄像头列表内摄像头型号的，如果用户需要对其他型号的摄像头
 进行配置，或者针对配置信息有需要进行修改的地方，可以在自定义配置界面输入相关的串
 行器和解串器的配置信息，生成用户自定义的摄像头型号。然后依照上面的配置操作生成配
 置信息，完成对板卡的自定义配置。</p>
 <section id="id14">
-<h3>切换功能界面<a class="headerlink" href="#id14" title="此标题的永久链接">¶</a></h3>
+<h3>切换功能界面<a class="headerlink" href="#id14" title="此标题的永久链接">#</a></h3>
 <p>板卡的自定义配置界面不在主界面，需要点击自定义配置，将界面切换至自定义配置功能界面。</p>
 <img alt="../_images/image13.png" src="../_images/image13.png" />
 <p>图 3-14 切换功能界面</p>
 </section>
 <section id="id15">
-<h3>输入配置信息<a class="headerlink" href="#id15" title="此标题的永久链接">¶</a></h3>
+<h3>输入配置信息<a class="headerlink" href="#id15" title="此标题的永久链接">#</a></h3>
 <p>在表格中输入配置信息，然后修改摄像头的参数，最后点击记录文件按键生成自定义的
 摄像头配置文件。可以点击表格上侧的载入文件按键加载已记录的摄像头配置文件。</p>
 <img alt="../_images/image14.png" src="../_images/image14.png" />
@@ -263,7 +443,7 @@
 <p>图 3-16 加载摄像头文件</p>
 </section>
 <section id="id16">
-<h3>摄像头配置文件的使用<a class="headerlink" href="#id16" title="此标题的永久链接">¶</a></h3>
+<h3>摄像头配置文件的使用<a class="headerlink" href="#id16" title="此标题的永久链接">#</a></h3>
 <p>在主功能界面，点击添加摄像头按键，选择摄像头配置文件，点击打开，可以看到一条
 新的摄像头型号信息添加到了摄像头列表中。</p>
 <img alt="../_images/image16.png" src="../_images/image16.png" />
@@ -275,15 +455,15 @@
 </section>
 </section>
 <section id="id17">
-<h2>板卡升级<a class="headerlink" href="#id17" title="此标题的永久链接">¶</a></h2>
+<h2>板卡升级<a class="headerlink" href="#id17" title="此标题的永久链接">#</a></h2>
 <section id="id18">
-<h3>切换功能界面<a class="headerlink" href="#id18" title="此标题的永久链接">¶</a></h3>
+<h3>切换功能界面<a class="headerlink" href="#id18" title="此标题的永久链接">#</a></h3>
 <p>板卡的升级界面不在主界面，需要点击板卡升级，将界面切换至板卡升级功能界面。</p>
 <img alt="../_images/image19.png" src="../_images/image19.png" />
 <p>图 3-20 切换功能界面</p>
 </section>
 <section id="id19">
-<h3>升级<a class="headerlink" href="#id19" title="此标题的永久链接">¶</a></h3>
+<h3>升级<a class="headerlink" href="#id19" title="此标题的永久链接">#</a></h3>
 <p>在下拉框内，将板卡切换到需要进行升级的板卡，选择升级文件，点击升级按键，等待
 升级完成。</p>
 <img alt="../_images/image20.png" src="../_images/image20.png" />
@@ -297,72 +477,130 @@
 </section>
 
 
-	    </div>
-            <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="verify.html" class="btn btn-neutral float-right" title="板卡功能验证">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="environment.html" class="btn btn-neutral" title="板卡安装与环境配置"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
+                </article>
+              
 
-  <hr/>
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="environment.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">上一页</p>
+        <p class="prev-next-title">板卡安装与环境配置</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="verify.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">板卡功能验证</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
 
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2023, AUMO       https://www.aumo.cn/.
-    </p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目录
   </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">运行板卡配置软件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">生成板卡配置文件</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">新建配置文件</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">配置通道</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">生成配置文件</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">打开板卡配置文件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">配置板卡</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">切换功能界面</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">板卡添加配置文件</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">板卡自启动配置</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">通道时间戳同步设置</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">自定义摄像头</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">切换功能界面</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">输入配置信息</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">摄像头配置文件的使用</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">板卡升级</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">切换功能界面</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">升级</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
 
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
-
-</footer>
-	</div>
-	</div>
-	  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-    <script type="text/javascript" src="../_static/documentation_options.js">
-
-    </script>
-    <script type="text/javascript" src="../_static/doctools.js">
-
-    </script>
-    <script type="text/javascript" src="../_static/sphinx_highlight.js">
-
-    </script>
-    <script type="text/javascript" src="../_static/translations.js">
-
-    </script>
-
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
+  <div class="footer-item">
+    
+<p class="component-author">
+作者： JunFN
+</p>
 
-   <script type="text/javascript"
-           src="../_static/js/theme.js"></script>
-
-   <script type="text/javascript"
-           src="../_static/js/pdj.js"></script>
-
+  </div>
   
-  
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
-      });
-  </script>
-   
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, AUMO       https://www.aumo.cn/.
+      <br/>
+    
+  </p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
