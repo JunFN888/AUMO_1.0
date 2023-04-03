@@ -41,18 +41,8 @@ html_static_path = ['_static']
 #html_theme = 'groundwork'
 #html_theme_path = [sphinx-groundwork-theme.get_html_theme_path()]
 
-#import sphinx_pdj_theme
-#html_theme = 'sphinx_pdj_theme'
-#html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
+import sphinx_pdj_theme
+html_theme = 'sphinx_pdj_theme'
+html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 
 #html_theme = 'nature'
-
-#html_theme = 'topos-theme'
-
-#html_theme = 'yummy_sphinx_theme'
-
-#html_theme = 'renku'
-
-#html_theme = 'press'
-
-html_theme = 'furo'
