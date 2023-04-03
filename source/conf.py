@@ -51,4 +51,8 @@ html_static_path = ['_static']
 
 #html_theme = 'yummy_sphinx_theme'
 
-html_theme = 'renku'
+#html_theme = 'renku'
+
+#html_theme = 'press'
+
+html_theme = 'furo'
