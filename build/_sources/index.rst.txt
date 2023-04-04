@@ -13,16 +13,23 @@
    :caption: 公司简介
 
    src/about_aumo
+   src/introduction
+
 
 .. toctree::
-   :maxdepth: 2
-   :caption: A16 手册
+   :maxdepth: 1
+   :caption: 手册详文
 
-   src/introduction
-   src/environment
-   src/explain
-   src/verify
-
+   src/pd
+   src/one
+   src/two
+   src/three
+   src/four
+   src/five
+   src/six
+   src/seven
+   src/eight
+   src/nine
 
 
 .. toctree::

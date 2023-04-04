@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = '16 路车载摄像头 GMSL 采集卡操作手册'
+project = '16路车载摄像头GMSL采集卡手册'
 copyright = '2023, AUMO       https://www.aumo.cn/'
 author = 'JunFN'
 release = '1.0'
