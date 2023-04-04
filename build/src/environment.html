@@ -1,44 +1,191 @@
 
+
 <!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>板卡安装与环境配置 &mdash; 16 路车载摄像头 GMSL 采集卡操作手册 1.0 文档</title>
+  
 
-    <title>板卡安装与环境配置 &#8212; 16 路车载摄像头 GMSL 采集卡操作手册 1.0 文档</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nature.css" />
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
-    <script src="../_static/translations.js"></script>
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="软件操作说明" href="explain.html" />
     <link rel="prev" title="引言" href="introduction.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>导航</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="总索引"
-             accesskey="I">索引</a></li>
-        <li class="right" >
-          <a href="explain.html" title="软件操作说明"
-             accesskey="N">下一页</a> |</li>
-        <li class="right" >
-          <a href="introduction.html" title="引言"
-             accesskey="P">上一页</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">16 路车载摄像头 GMSL 采集卡操作手册 1.0 文档</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">板卡安装与环境配置</a></li> 
-      </ul>
-    </div>  
+</head>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> 16 路车载摄像头 GMSL 采集卡操作手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">公司简介</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about_aumo.html">关于AUMO</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">A16 手册</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">引言</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">板卡安装与环境配置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">板卡安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">系统环境配置</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">系统软件安装</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">驱动加载</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="explain.html">软件操作说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="verify.html">板卡功能验证</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">常见问题</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="problem.html">PROBLEM</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AUMO版权</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="IP.html">版权说明</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">16 路车载摄像头 GMSL 采集卡操作手册</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>板卡安装与环境配置</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/src/environment.rst.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <img alt="../_images/88.png" class="align-center" src="../_images/88.png" />
 <section id="id1">
@@ -93,77 +240,51 @@ pkg 文件夹内。</p>
 </section>
 
 
-            <div class="clearer"></div>
+           </div>
+           
           </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="explain.html" class="btn btn-neutral float-right" title="软件操作说明" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="introduction.html" class="btn btn-neutral float-left" title="引言" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2023, AUMO       https://www.aumo.cn/.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <div>
-    <h3><a href="../index.html">目录</a></h3>
-    <ul>
-<li><a class="reference internal" href="#">板卡安装与环境配置</a><ul>
-<li><a class="reference internal" href="#id2">板卡安装</a></li>
-<li><a class="reference internal" href="#id3">系统环境配置</a><ul>
-<li><a class="reference internal" href="#id4">系统软件安装</a></li>
-<li><a class="reference internal" href="#id5">驱动加载</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+
+    </section>
 
   </div>
-  <div>
-    <h4>上一主题</h4>
-    <p class="topless"><a href="introduction.html"
-                          title="上一章">引言</a></p>
-  </div>
-  <div>
-    <h4>下一主题</h4>
-    <p class="topless"><a href="explain.html"
-                          title="下一章">软件操作说明</a></p>
-  </div>
-  <div role="note" aria-label="source link">
-    <h3>本页</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/src/environment.rst.txt"
-            rel="nofollow">显示源代码</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">快速搜索</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="提交" />
-    </form>
-    </div>
-</div>
-<script>document.getElementById('searchbox').style.display = "block"</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>导航</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="总索引"
-             >索引</a></li>
-        <li class="right" >
-          <a href="explain.html" title="软件操作说明"
-             >下一页</a> |</li>
-        <li class="right" >
-          <a href="introduction.html" title="引言"
-             >上一页</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">16 路车载摄像头 GMSL 采集卡操作手册 1.0 文档</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">板卡安装与环境配置</a></li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; 版权所有 2023, AUMO       https://www.aumo.cn/.
-      由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3创建。
-    </div>
-  </body>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
 </html>
