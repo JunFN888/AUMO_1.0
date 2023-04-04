@@ -1,5 +1,6 @@
 .. image:: images/images_0/8.png 
-
+   :align: center
+   
 ==============
 版权说明
 ==============

@@ -42,7 +42,7 @@
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="软件参数" href="five.html" />
+    <link rel="next" title="Fakra接口定义" href="five.html" />
     <link rel="prev" title="接口说明" href="three.html" /> 
 </head>
 
@@ -100,7 +100,7 @@
 <li class="toctree-l1"><a class="reference internal" href="two.html">软件参数</a></li>
 <li class="toctree-l1"><a class="reference internal" href="three.html">接口说明</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">航空插座接口定义</a></li>
-<li class="toctree-l1"><a class="reference internal" href="five.html">软件参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="five.html">Fakra接口定义</a></li>
 <li class="toctree-l1"><a class="reference internal" href="six.html">尺寸结构</a></li>
 <li class="toctree-l1"><a class="reference internal" href="seven.html">功耗测试</a></li>
 <li class="toctree-l1"><a class="reference internal" href="eight.html">典型案例</a></li>
@@ -184,8 +184,73 @@
 <section id="id1">
 <h1>航空插座接口定义<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h1>
 <blockquote>
-<div><p>采用 M8 6pin 的航空插座（公座），用于 GPS 通信和外部触发输入。</p>
+<div><p><strong>采用 M8 6pin 的航空插座（公座），用于 GPS 通信和外部触发输入。</strong></p>
 </div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 12.5%" />
+<col style="width: 37.5%" />
+<col style="width: 12.5%" />
+<col style="width: 37.5%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>PIN脚</p></th>
+<th class="head"><p>信号名</p></th>
+<th class="head"><p>方向</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><blockquote>
+<div><p>1</p>
+</div></blockquote>
+</td>
+<td><p>FPGA_TRIG</p></td>
+<td><p>输入</p></td>
+<td><p>外部摄像头同步触发</p></td>
+</tr>
+<tr class="row-odd"><td><blockquote>
+<div><p>2</p>
+</div></blockquote>
+</td>
+<td><p>GPS_PPS</p></td>
+<td><p>输入</p></td>
+<td><p>GPS PPS 同步输入</p></td>
+</tr>
+<tr class="row-even"><td><blockquote>
+<div><p>3</p>
+</div></blockquote>
+</td>
+<td><p>GPS_RXD</p></td>
+<td><p>输入</p></td>
+<td><p>GPS 串口通信 RXD，TTL 电平</p></td>
+</tr>
+<tr class="row-odd"><td><blockquote>
+<div><p>4</p>
+</div></blockquote>
+</td>
+<td><p>GPS_TXD</p></td>
+<td><p>输出</p></td>
+<td><p>GPS 串口通信 TXD，TTL 电平</p></td>
+</tr>
+<tr class="row-even"><td><blockquote>
+<div><p>5</p>
+</div></blockquote>
+</td>
+<td><p>GND</p></td>
+<td><p>——</p></td>
+<td><p>参考地</p></td>
+</tr>
+<tr class="row-odd"><td><blockquote>
+<div><p>6</p>
+</div></blockquote>
+</td>
+<td><p>GPS</p></td>
+<td><p>电源</p></td>
+<td><p>输出 默认 3.3V 输出，支持 5V（可选）</p></td>
+</tr>
+</tbody>
+</table>
 <img alt="../_images/4.png" src="../_images/4.png" />
 <p><em>A16 车载摄像头 GMSL 采集卡</em>    - <a class="reference external" href="https://www.aumo.cn">AUMO官方网站</a></p>
 </section>
@@ -196,7 +261,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="five.html" class="btn btn-neutral float-right" title="软件参数" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="five.html" class="btn btn-neutral float-right" title="Fakra接口定义" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="three.html" class="btn btn-neutral float-left" title="接口说明" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
     </div>
 

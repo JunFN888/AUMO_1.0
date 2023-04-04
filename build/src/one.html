@@ -100,7 +100,7 @@
 <li class="toctree-l1"><a class="reference internal" href="two.html">软件参数</a></li>
 <li class="toctree-l1"><a class="reference internal" href="three.html">接口说明</a></li>
 <li class="toctree-l1"><a class="reference internal" href="four.html">航空插座接口定义</a></li>
-<li class="toctree-l1"><a class="reference internal" href="five.html">软件参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="five.html">Fakra接口定义</a></li>
 <li class="toctree-l1"><a class="reference internal" href="six.html">尺寸结构</a></li>
 <li class="toctree-l1"><a class="reference internal" href="seven.html">功耗测试</a></li>
 <li class="toctree-l1"><a class="reference internal" href="eight.html">典型案例</a></li>
@@ -183,7 +183,83 @@
   <img alt="../_images/8.png" src="../_images/8.png" />
 <section id="id1">
 <h1>关键参数<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h1>
-<img alt="../_images/image3.png" src="../_images/image3.png" />
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 33.3%" />
+<col style="width: 25.0%" />
+<col style="width: 16.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>项目</p></th>
+<th class="head"><p>内容</p></th>
+<th class="head"><p>项目</p></th>
+<th class="head"><p>内容</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>总线</p></td>
+<td><p>支持 GMSL1 / GMSL2</p></td>
+<td><p>解串器</p></td>
+<td><p>MAX96712</p></td>
+</tr>
+<tr class="row-odd"><td><p>POC 供电</p></td>
+<td><p>单通道 Max <a class="reference external" href="mailto:1A&#37;&#52;&#48;12V">1A<span>&#64;</span>12V</a></p></td>
+<td><p>通道数</p></td>
+<td><p>16 通道摄像头输入</p></td>
+</tr>
+<tr class="row-even"><td><p>视频格式</p></td>
+<td><p>YUV422、RGB888、RAW12</p></td>
+<td><p>PCIE</p></td>
+<td><p>PCI Express Gen 3 x16</p></td>
+</tr>
+<tr class="row-odd"><td><p>输入分辨率</p></td>
+<td><p><a class="reference external" href="mailto:1920*1080&#37;&#52;&#48;30fps">1920*1080<span>&#64;</span>30fps</a> 最多支持16路 4096×2160&#64;30fps 最多支持8路</p></td>
+<td><p>网络</p></td>
+<td><p>10/100/1000M 自适应 支持 PTP 授时时间戳，精度小于 1ms</p></td>
+</tr>
+<tr class="row-even"><td><p>串行器</p></td>
+<td><p>支持 MAX96705/MAX9295A/MAX96717F/MAX96717等</p></td>
+<td><p>线缆长度</p></td>
+<td><p>GMSL1模式下可达40米（3Gbps） GMSL2模式下可达20米（6Gbps）</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPS</p></td>
+<td><p>支持 GPS 授时同步</p></td>
+<td><p>外部触发</p></td>
+<td><p>支持摄像头外部触发同步</p></td>
+</tr>
+<tr class="row-even"><td><p>升级</p></td>
+<td><p>支持 PC 端固件升级</p></td>
+<td><p>架构</p></td>
+<td><p>支持 V4L2 软件架构</p></td>
+</tr>
+<tr class="row-odd"><td><p>I/0 接口</p></td>
+<td><p>TTL 触发，GPS</p></td>
+<td><p>FAKRA</p></td>
+<td><p>4 合 1 Amphenal Z code min-Fakra</p></td>
+</tr>
+<tr class="row-even"><td><p>工作温度</p></td>
+<td><p>-40℃ ~ 70℃</p></td>
+<td><p>存储温度</p></td>
+<td><p>-40℃ ~ 85℃</p></td>
+</tr>
+<tr class="row-odd"><td><p>工作湿度</p></td>
+<td><p>10%～90%</p></td>
+<td><p>存储湿度</p></td>
+<td><p>0～90%</p></td>
+</tr>
+<tr class="row-even"><td><p>供电</p></td>
+<td><p>PCIE 供电 / 12V 供电</p></td>
+<td><p>重量</p></td>
+<td><p>400g</p></td>
+</tr>
+<tr class="row-odd"><td><p>尺寸</p></td>
+<td><p>长宽：111.15 * 189.99（mm）</p></td>
+<td><p>MTBF</p></td>
+<td><p>5 年</p></td>
+</tr>
+</tbody>
+</table>
 <p><em>A16 车载摄像头 GMSL 采集卡</em>    - <a class="reference external" href="https://www.aumo.cn">AUMO官方网站</a></p>
 </section>
 
