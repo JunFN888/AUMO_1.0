@@ -46,5 +46,5 @@ html_static_path = ['_static']
 #html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 
 #html_theme = 'nature'
-html_theme = 'renku'
-
+#html_theme = 'renku'
+html_theme = 'sphinx_rtd_theme'
